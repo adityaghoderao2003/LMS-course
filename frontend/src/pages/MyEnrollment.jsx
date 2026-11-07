@@ -16,7 +16,7 @@ const MyEnrollments = () => {
             }
 
             const response = await fetch(
-                "http://localhost:5000/api/enrollments/my-enrollments",
+                "https://lms-course-y0ig.onrender.com/api/enrollments/my-enrollments",
                 {
                     method: "GET",
                     headers: {
@@ -52,7 +52,7 @@ const MyEnrollments = () => {
             const token = localStorage.getItem("token");
 
             const response = await fetch(
-                `http://localhost:5000/api/enrollments/${id}`,
+                `https://lms-course-y0ig.onrender.com/api/enrollments/${id}`,
                 {
                     method: "DELETE",
                     headers: {

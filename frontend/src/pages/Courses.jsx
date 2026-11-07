@@ -17,7 +17,7 @@ const role = localStorage.getItem("role");
     async function fetchCourses() {
         try {
             const response = await fetch(
-                `http://localhost:5000/api/courses?search=${search}&category=${category}&sort=${sort}&page=${page}&limit=5`
+                `https://lms-course-y0ig.onrender.com/api/courses?search=${search}&category=${category}&sort=${sort}&page=${page}&limit=5`
             );
 
             const data = await response.json();
@@ -52,7 +52,7 @@ const role = localStorage.getItem("role");
             const token = localStorage.getItem("token");
 
             const response = await fetch(
-                `http://localhost:5000/api/courses/${id}`,
+                `https://lms-course-y0ig.onrender.com/api/courses/${id}`,
                 {
                     method: "DELETE",
                     headers: {

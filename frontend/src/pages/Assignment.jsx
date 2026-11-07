@@ -11,7 +11,7 @@ const Assignments = () => {
 
     async function getAssignments() {
         try {
-            const response = await fetch("http://localhost:5000/api/assignments");
+            const response = await fetch("https://lms-course-y0ig.onrender.com/api/assignments");
             const data = await response.json();
 
             if (response.ok) {
@@ -33,7 +33,7 @@ const Assignments = () => {
 
         try {
             const response = await fetch(
-                `http://localhost:5000/api/assignments/${id}`,
+                `https://lms-course-y0ig.onrender.com/api/assignments/${id}`,
                 {
                     method: "DELETE",
                     headers: {

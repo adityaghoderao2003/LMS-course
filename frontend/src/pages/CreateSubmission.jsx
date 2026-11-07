@@ -18,7 +18,7 @@ const CreateSubmission = () => {
     async function getAssignments() {
         try {
             const response = await fetch(
-                "http://localhost:5000/api/assignments"
+                "https://lms-course-y0ig.onrender.com/api/assignments"
             );
 
             const data = await response.json();
@@ -45,7 +45,7 @@ const CreateSubmission = () => {
 
         try {
             const response = await fetch(
-                "http://localhost:5000/api/submissions",
+                "https://lms-course-y0ig.onrender.com/api/submissions",
                 {
                     method: "POST",
                     headers: {

@@ -15,7 +15,7 @@ const Submissions = () => {
     async function getSubmissions() {
         try {
             const response = await fetch(
-                "http://localhost:5000/api/submissions/my-submissions",
+                "https://lms-course-y0ig.onrender.com/api/submissions/my-submissions",
                 {
                     headers: {
                         Authorization: `Bearer ${token}`
@@ -45,7 +45,7 @@ const Submissions = () => {
 
         try {
             const response = await fetch(
-                `http://localhost:5000/api/submissions/${editId}`,
+                `https://lms-course-y0ig.onrender.com/api/submissions/${editId}`,
                 {
                     method: "PUT",
                     headers: {
@@ -80,7 +80,7 @@ const Submissions = () => {
 
         try {
             const response = await fetch(
-                `http://localhost:5000/api/submissions/${id}`,
+                `https://lms-course-y0ig.onrender.com/api/submissions/${id}`,
                 {
                     method: "DELETE",
                     headers: {

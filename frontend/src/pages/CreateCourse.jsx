@@ -33,7 +33,7 @@ const CreateCourse = () => {
             }
 
             const response = await fetch(
-                "http://localhost:5000/api/courses",
+                "https://lms-course-y0ig.onrender.com/api/courses",
                 {
                     method: "POST",
                     headers: {

@@ -17,7 +17,7 @@ function EnrollmentDetails() {
             const token = localStorage.getItem("token");
 
             const response = await fetch(
-                `http://localhost:5000/api/enrollments/${id}`,
+                `https://lms-course-y0ig.onrender.com/api/enrollments/${id}`,
                 {
                     headers: {
                         Authorization: `Bearer ${token}`

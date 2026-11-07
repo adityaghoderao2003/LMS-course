@@ -18,7 +18,7 @@ const EditAssignment = () => {
     async function getAssignment() {
         try {
             const response = await fetch(
-                `http://localhost:5000/api/assignments/${id}`
+                `https://lms-course-y0ig.onrender.com/api/assignments/${id}`
             );
 
             const data = await response.json();
@@ -49,7 +49,7 @@ const EditAssignment = () => {
 
         try {
             const response = await fetch(
-                `http://localhost:5000/api/assignments/${id}`,
+                `https://lms-course-y0ig.onrender.com/api/assignments/${id}`,
                 {
                     method: "PUT",
                     headers: {
